@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>四、接口 | 海涛 Blog</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/logo.png">
+    <meta name="description" content="海涛的前端记录">
+    
+    <link rel="preload" href="/assets/css/0.styles.8d5fe4af.css" as="style"><link rel="preload" href="/assets/js/app.78c1d0ed.js" as="script"><link rel="preload" href="/assets/js/2.a6c8477a.js" as="script"><link rel="preload" href="/assets/js/12.1307ccbc.js" as="script"><link rel="prefetch" href="/assets/js/10.5819a154.js"><link rel="prefetch" href="/assets/js/11.29eaf4f2.js"><link rel="prefetch" href="/assets/js/13.6816e20b.js"><link rel="prefetch" href="/assets/js/14.b1d6c439.js"><link rel="prefetch" href="/assets/js/15.374657d2.js"><link rel="prefetch" href="/assets/js/16.eb8c525a.js"><link rel="prefetch" href="/assets/js/17.a9e8f83b.js"><link rel="prefetch" href="/assets/js/18.1d7b46ae.js"><link rel="prefetch" href="/assets/js/19.cf53ea8d.js"><link rel="prefetch" href="/assets/js/20.a34b938c.js"><link rel="prefetch" href="/assets/js/21.064cfca9.js"><link rel="prefetch" href="/assets/js/22.195b8b7b.js"><link rel="prefetch" href="/assets/js/23.f26a1945.js"><link rel="prefetch" href="/assets/js/3.fe7f9dbd.js"><link rel="prefetch" href="/assets/js/4.16ac4801.js"><link rel="prefetch" href="/assets/js/5.0da360be.js"><link rel="prefetch" href="/assets/js/6.86d36bdf.js"><link rel="prefetch" href="/assets/js/7.57e4a60b.js"><link rel="prefetch" href="/assets/js/8.6d34a759.js"><link rel="prefetch" href="/assets/js/9.bd518204.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8d5fe4af.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="海涛 Blog" class="logo"> <span class="site-name can-hide">海涛 Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+    首页
+  </a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="知识体系" class="dropdown-title"><span class="title">知识体系</span> <span class="arrow down"></span></button> <button type="button" aria-label="知识体系" class="mobile-dropdown-title"><span class="title">知识体系</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/system/vue3/01_认识Vue3.html" class="nav-link">
+    Vue3
+  </a></li><li class="dropdown-item"><!----> <a href="/pages/system/typescript/01_简介.html" class="nav-link">
+    TypeScript
+  </a></li><li class="dropdown-item"><!----> <a href="/pages/folder2/test4.html" class="nav-link">
+    Node
+  </a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="原理探究" class="dropdown-title"><span class="title">原理探究</span> <span class="arrow down"></span></button> <button type="button" aria-label="原理探究" class="mobile-dropdown-title"><span class="title">原理探究</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/folder1/test1.html" class="nav-link">
+    JavaScript
+  </a></li><li class="dropdown-item"><!----> <a href="/pages/folder2/test4.html" class="nav-link">
+    CSS
+  </a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="架构设计" class="dropdown-title"><span class="title">架构设计</span> <span class="arrow down"></span></button> <button type="button" aria-label="架构设计" class="mobile-dropdown-title"><span class="title">架构设计</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/folder2/test4.html" class="nav-link">
+    设计模式
+  </a></li><li class="dropdown-item"><!----> <a href="/pages/folder1/test1.html" class="nav-link">
+    权限控制
+  </a></li></ul></div></div><div class="nav-item"><a href="https://github.com/haitaoyu" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+    首页
+  </a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="知识体系" class="dropdown-title"><span class="title">知识体系</span> <span class="arrow down"></span></button> <button type="button" aria-label="知识体系" class="mobile-dropdown-title"><span class="title">知识体系</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/system/vue3/01_认识Vue3.html" class="nav-link">
+    Vue3
+  </a></li><li class="dropdown-item"><!----> <a href="/pages/system/typescript/01_简介.html" class="nav-link">
+    TypeScript
+  </a></li><li class="dropdown-item"><!----> <a href="/pages/folder2/test4.html" class="nav-link">
+    Node
+  </a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="原理探究" class="dropdown-title"><span class="title">原理探究</span> <span class="arrow down"></span></button> <button type="button" aria-label="原理探究" class="mobile-dropdown-title"><span class="title">原理探究</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/folder1/test1.html" class="nav-link">
+    JavaScript
+  </a></li><li class="dropdown-item"><!----> <a href="/pages/folder2/test4.html" class="nav-link">
+    CSS
+  </a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="架构设计" class="dropdown-title"><span class="title">架构设计</span> <span class="arrow down"></span></button> <button type="button" aria-label="架构设计" class="mobile-dropdown-title"><span class="title">架构设计</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/folder2/test4.html" class="nav-link">
+    设计模式
+  </a></li><li class="dropdown-item"><!----> <a href="/pages/folder1/test1.html" class="nav-link">
+    权限控制
+  </a></li></ul></div></div><div class="nav-item"><a href="https://github.com/haitaoyu" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>TypeScript 基础知识</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/system/typescript/01_简介.html" class="sidebar-link">一、简介</a></li><li><a href="/pages/system/typescript/02_安装.html" class="sidebar-link">二、安装</a></li><li><a href="/pages/system/typescript/03_基础类型.html" class="sidebar-link">三、基础类型</a></li><li><a href="/pages/system/typescript/04_接口.html" class="active sidebar-link">四、接口</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/system/typescript/04_接口.html#_1-接口初探" class="sidebar-link">1. 接口初探</a></li><li class="sidebar-sub-header"><a href="/pages/system/typescript/04_接口.html#_2-可选属性" class="sidebar-link">2. 可选属性</a></li><li class="sidebar-sub-header"><a href="/pages/system/typescript/04_接口.html#_3-只读属性" class="sidebar-link">3. 只读属性</a></li><li class="sidebar-sub-header"><a href="/pages/system/typescript/04_接口.html#_4-函数类型" class="sidebar-link">4. 函数类型</a></li><li class="sidebar-sub-header"><a href="/pages/system/typescript/04_接口.html#_5-类类型" class="sidebar-link">5. 类类型</a></li><li class="sidebar-sub-header"><a href="/pages/system/typescript/04_接口.html#_6-接口继承接口" class="sidebar-link">6. 接口继承接口</a></li></ul></li><li><a href="/pages/system/typescript/05_类.html" class="sidebar-link">五、类</a></li><li><a href="/pages/system/typescript/06_函数.html" class="sidebar-link">六、函数</a></li><li><a href="/pages/system/typescript/07_泛型.html" class="sidebar-link">七、泛型</a></li><li><a href="/pages/system/typescript/08_其他.html" class="sidebar-link">八、其他</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="四、接口"><a href="#四、接口" class="header-anchor">#</a> 四、接口</h1> <p>TypeScript 的核心原则之一是对值所具有的结构进行类型检查，接口（Interfaces）用来定义对象的类型。接口是对对象属性和方法的描述。</p> <h2 id="_1-接口初探"><a href="#_1-接口初探" class="header-anchor">#</a> 1. 接口初探</h2> <p>下面通过一个例子，来观察接口是如何工作的。<br></p> <p>需求：创建人的对象，并对人的属性进行一定的约束：</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token comment">/* 
+  id是number类型, 必须有, 只读的
+  name是string类型, 必须有
+  age是number类型, 必须有
+  sex是string类型, 可以没有
+*/</span>
+
+<span class="token keyword">interface</span> <span class="token class-name">IPerson</span> <span class="token punctuation">{</span>
+  id<span class="token operator">:</span> <span class="token builtin">number</span>
+  name<span class="token operator">:</span> <span class="token builtin">string</span>
+  age<span class="token operator">:</span> <span class="token builtin">number</span>
+  sex<span class="token operator">:</span> <span class="token builtin">string</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> person1<span class="token operator">:</span> IPerson <span class="token operator">=</span> <span class="token punctuation">{</span>
+  id<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">'tom'</span><span class="token punctuation">,</span>
+  age<span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+  sex<span class="token operator">:</span> <span class="token string">'男'</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>类型检查器会查看对象内部的属性是否与 IPerson 接口描述一致, 如果不一致就会提示类型错误。</p> <br> <h2 id="_2-可选属性"><a href="#_2-可选属性" class="header-anchor">#</a> 2. 可选属性</h2> <p>接口里的属性不全都是必需的。 有些是只在某些条件下存在，或者根本不存在。</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">interface</span> <span class="token class-name">IPerson</span> <span class="token punctuation">{</span>
+  id<span class="token operator">:</span> <span class="token builtin">number</span>
+  name<span class="token operator">:</span> <span class="token builtin">string</span>
+  age<span class="token operator">:</span> <span class="token builtin">number</span>
+  sex<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>带有可选属性的接口与普通的接口定义差不多，只是在可选属性名字定义的后面加一个 <code>?</code> 符号。<br><br>可选属性的好处之一是可以对可能存在的属性进行预定义，好处之二是可以捕获引用了不存在的属性时的错误。</p> <br> <h2 id="_3-只读属性"><a href="#_3-只读属性" class="header-anchor">#</a> 3. 只读属性</h2> <p>一些对象属性只能在对象刚刚创建的时候修改其值。可以在属性名前用 <code>readonly</code> 来指定只读属性：</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">interface</span> <span class="token class-name">IPerson</span> <span class="token punctuation">{</span>
+  <span class="token keyword">readonly</span> id<span class="token operator">:</span> <span class="token builtin">number</span>
+  name<span class="token operator">:</span> <span class="token builtin">string</span>
+  age<span class="token operator">:</span> <span class="token builtin">number</span>
+  sex<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>一旦赋值后再也不能被改变了。</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">const</span> person2<span class="token operator">:</span> IPerson <span class="token operator">=</span> <span class="token punctuation">{</span>
+  id<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">'tom'</span><span class="token punctuation">,</span>
+  age<span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+  <span class="token comment">// sex: '男' // 可以没有</span>
+<span class="token punctuation">}</span>
+person2<span class="token punctuation">.</span>id <span class="token operator">=</span> <span class="token number">2</span> <span class="token comment">// error</span>
+</code></pre></div><h3 id="readonly-vs-const"><a href="#readonly-vs-const" class="header-anchor">#</a> readonly vs const</h3> <p>最简单判断该用 <code>readonly</code> 还是 <code>const</code> 的方法是看要把它作为变量使用还是做为一个属性。 做为变量使用的话用 <code>const</code>，若做为属性则使用 <code>readonly</code>。</p> <br> <h2 id="_4-函数类型"><a href="#_4-函数类型" class="header-anchor">#</a> 4. 函数类型</h2> <p>接口能够描述 JavaScript 中对象拥有的各种各样的外形。 除了描述带有属性的普通对象外，接口也可以描述函数类型。<br><br></p> <p>为了使用接口表示函数类型，需要给接口定义一个调用签名。它就像是一个只有参数列表和返回值类型的函数定义，参数列表里的每个参数都需要名字和类型。</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">interface</span> <span class="token class-name">SearchFunc</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">(</span>source<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span> subString<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">boolean</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>这样定义后，可以像使用其它接口一样使用这个函数类型的接口。 下例展示了如何创建一个函数类型的变量，并将一个同类型的函数赋值给这个变量。</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">const</span> mySearch<span class="token operator">:</span> <span class="token function-variable function">SearchFunc</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>source<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span> sub<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">boolean</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> source<span class="token punctuation">.</span><span class="token function">search</span><span class="token punctuation">(</span>sub<span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token operator">-</span><span class="token number">1</span>
+<span class="token punctuation">}</span>
+
+<span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">mySearch</span><span class="token punctuation">(</span><span class="token string">'abcd'</span><span class="token punctuation">,</span> <span class="token string">'bc'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre></div><br> <h2 id="_5-类类型"><a href="#_5-类类型" class="header-anchor">#</a> 5. 类类型</h2> <h3 id="类实现接口"><a href="#类实现接口" class="header-anchor">#</a> 类实现接口</h3> <p>与 C# 或 Java 里接口的基本作用一样，TypeScript 也能够用它来明确的强制一个类去符合某种契约。</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">interface</span> <span class="token class-name">Alarm</span> <span class="token punctuation">{</span>
+  <span class="token function">alert</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">interface</span> <span class="token class-name">Light</span> <span class="token punctuation">{</span>
+  <span class="token function">lightOn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token keyword">void</span><span class="token punctuation">;</span>
+  <span class="token function">lightOff</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token keyword">void</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Car</span> <span class="token keyword">implements</span> <span class="token class-name">Alarm</span> <span class="token punctuation">{</span>
+  <span class="token function">alert</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Car alert'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="一个类可以实现多个接口"><a href="#一个类可以实现多个接口" class="header-anchor">#</a> 一个类可以实现多个接口</h3> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">class</span> <span class="token class-name">Car2</span> <span class="token keyword">implements</span> <span class="token class-name">Alarm</span><span class="token punctuation">,</span> Light <span class="token punctuation">{</span>
+  <span class="token function">alert</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Car alert'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">lightOn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Car light on'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">lightOff</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Car light off'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><br> <h2 id="_6-接口继承接口"><a href="#_6-接口继承接口" class="header-anchor">#</a> 6. 接口继承接口</h2> <p>和类一样，接口也可以相互继承。 能够从一个接口里复制成员到另一个接口里，可以更灵活地将接口分割到可重用的模块里。</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">interface</span> <span class="token class-name">LightableAlarm</span> <span class="token keyword">extends</span> <span class="token class-name">Alarm</span><span class="token punctuation">,</span> Light <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/pages/system/typescript/03_基础类型.html" class="prev">
+          三、基础类型
+        </a></span> <span class="next"><a href="/pages/system/typescript/05_类.html">
+          五、类
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.78c1d0ed.js" defer></script><script src="/assets/js/2.a6c8477a.js" defer></script><script src="/assets/js/12.1307ccbc.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>二、创建 Vue3 项目 | 海涛 Blog</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/logo.png">
+    <meta name="description" content="海涛的前端记录">
+    
+    <link rel="preload" href="/assets/css/0.styles.8d5fe4af.css" as="style"><link rel="preload" href="/assets/js/app.78c1d0ed.js" as="script"><link rel="preload" href="/assets/js/2.a6c8477a.js" as="script"><link rel="preload" href="/assets/js/18.1d7b46ae.js" as="script"><link rel="prefetch" href="/assets/js/10.5819a154.js"><link rel="prefetch" href="/assets/js/11.29eaf4f2.js"><link rel="prefetch" href="/assets/js/12.1307ccbc.js"><link rel="prefetch" href="/assets/js/13.6816e20b.js"><link rel="prefetch" href="/assets/js/14.b1d6c439.js"><link rel="prefetch" href="/assets/js/15.374657d2.js"><link rel="prefetch" href="/assets/js/16.eb8c525a.js"><link rel="prefetch" href="/assets/js/17.a9e8f83b.js"><link rel="prefetch" href="/assets/js/19.cf53ea8d.js"><link rel="prefetch" href="/assets/js/20.a34b938c.js"><link rel="prefetch" href="/assets/js/21.064cfca9.js"><link rel="prefetch" href="/assets/js/22.195b8b7b.js"><link rel="prefetch" href="/assets/js/23.f26a1945.js"><link rel="prefetch" href="/assets/js/3.fe7f9dbd.js"><link rel="prefetch" href="/assets/js/4.16ac4801.js"><link rel="prefetch" href="/assets/js/5.0da360be.js"><link rel="prefetch" href="/assets/js/6.86d36bdf.js"><link rel="prefetch" href="/assets/js/7.57e4a60b.js"><link rel="prefetch" href="/assets/js/8.6d34a759.js"><link rel="prefetch" href="/assets/js/9.bd518204.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8d5fe4af.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="海涛 Blog" class="logo"> <span class="site-name can-hide">海涛 Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+    首页
+  </a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="知识体系" class="dropdown-title"><span class="title">知识体系</span> <span class="arrow down"></span></button> <button type="button" aria-label="知识体系" class="mobile-dropdown-title"><span class="title">知识体系</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/system/vue3/01_认识Vue3.html" class="nav-link">
+    Vue3
+  </a></li><li class="dropdown-item"><!----> <a href="/pages/system/typescript/01_简介.html" class="nav-link">
+    TypeScript
+  </a></li><li class="dropdown-item"><!----> <a href="/pages/folder2/test4.html" class="nav-link">
+    Node
+  </a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="原理探究" class="dropdown-title"><span class="title">原理探究</span> <span class="arrow down"></span></button> <button type="button" aria-label="原理探究" class="mobile-dropdown-title"><span class="title">原理探究</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/folder1/test1.html" class="nav-link">
+    JavaScript
+  </a></li><li class="dropdown-item"><!----> <a href="/pages/folder2/test4.html" class="nav-link">
+    CSS
+  </a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="架构设计" class="dropdown-title"><span class="title">架构设计</span> <span class="arrow down"></span></button> <button type="button" aria-label="架构设计" class="mobile-dropdown-title"><span class="title">架构设计</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/folder2/test4.html" class="nav-link">
+    设计模式
+  </a></li><li class="dropdown-item"><!----> <a href="/pages/folder1/test1.html" class="nav-link">
+    权限控制
+  </a></li></ul></div></div><div class="nav-item"><a href="https://github.com/haitaoyu" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+    首页
+  </a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="知识体系" class="dropdown-title"><span class="title">知识体系</span> <span class="arrow down"></span></button> <button type="button" aria-label="知识体系" class="mobile-dropdown-title"><span class="title">知识体系</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/system/vue3/01_认识Vue3.html" class="nav-link">
+    Vue3
+  </a></li><li class="dropdown-item"><!----> <a href="/pages/system/typescript/01_简介.html" class="nav-link">
+    TypeScript
+  </a></li><li class="dropdown-item"><!----> <a href="/pages/folder2/test4.html" class="nav-link">
+    Node
+  </a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="原理探究" class="dropdown-title"><span class="title">原理探究</span> <span class="arrow down"></span></button> <button type="button" aria-label="原理探究" class="mobile-dropdown-title"><span class="title">原理探究</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/folder1/test1.html" class="nav-link">
+    JavaScript
+  </a></li><li class="dropdown-item"><!----> <a href="/pages/folder2/test4.html" class="nav-link">
+    CSS
+  </a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="架构设计" class="dropdown-title"><span class="title">架构设计</span> <span class="arrow down"></span></button> <button type="button" aria-label="架构设计" class="mobile-dropdown-title"><span class="title">架构设计</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/folder2/test4.html" class="nav-link">
+    设计模式
+  </a></li><li class="dropdown-item"><!----> <a href="/pages/folder1/test1.html" class="nav-link">
+    权限控制
+  </a></li></ul></div></div><div class="nav-item"><a href="https://github.com/haitaoyu" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Vue3 基础知识</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/system/vue3/01_认识Vue3.html" class="sidebar-link">一、认识 Vue3</a></li><li><a href="/pages/system/vue3/02_创建Vue3项目.html" class="active sidebar-link">二、创建 Vue3 项目</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/system/vue3/02_创建Vue3项目.html#_1-使用-vue-cli-创建" class="sidebar-link">1. 使用 vue-cli 创建</a></li><li class="sidebar-sub-header"><a href="/pages/system/vue3/02_创建Vue3项目.html#_2-使用-vite-创建" class="sidebar-link">2. 使用 Vite 创建</a></li></ul></li><li><a href="/pages/system/vue3/03_常用CompositionAPI.html" class="sidebar-link">三、常用 Composition API</a></li><li><a href="/pages/system/vue3/04_其他CompositionAPI.html" class="sidebar-link">四、其他 Composition API</a></li><li><a href="/pages/system/vue3/05_CompositionAPI的优势.html" class="sidebar-link">五、Composition API 的优势</a></li><li><a href="/pages/system/vue3/06_新的组件.html" class="sidebar-link">六、新的组件</a></li><li><a href="/pages/system/vue3/07_其他.html" class="sidebar-link">七、其他</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="二、创建-vue3-项目"><a href="#二、创建-vue3-项目" class="header-anchor">#</a> 二、创建 Vue3 项目</h1> <br> <h2 id="_1-使用-vue-cli-创建"><a href="#_1-使用-vue-cli-创建" class="header-anchor">#</a> 1. 使用 vue-cli 创建</h2> <blockquote><p>官方文档：https://cli.vuejs.org/zh/guide/creating-a-project.html#vue-create</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment">## 查看@vue/cli版本，确保@vue/cli版本在4.5.0以上</span>
+vue --version
+<span class="token comment">## 安装或者升级你的@vue/cli</span>
+<span class="token function">npm</span> <span class="token function">install</span> -g @vue/cli
+<span class="token comment">## 创建</span>
+vue create vue_test
+<span class="token comment">## 启动</span>
+<span class="token builtin class-name">cd</span> vue_test
+<span class="token function">npm</span> run serve
+</code></pre></div><br> <h2 id="_2-使用-vite-创建"><a href="#_2-使用-vite-创建" class="header-anchor">#</a> 2. 使用 Vite 创建</h2> <blockquote><p>官方文档：https://v3.cn.vuejs.org/guide/installation.html#vite</p> <p>vite官网：https://vitejs.cn</p></blockquote> <ul><li>什么是 Vite？—— 新一代前端构建工具。</li> <li>优势如下：
+<ul><li>开发环境中，无需打包操作，可快速的冷启动。</li> <li>轻量快速的热重载（HMR）。</li> <li>真正的按需编译，不再等待整个应用编译完成。</li></ul></li></ul> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment">## 创建工程</span>
+<span class="token function">npm</span> init vite-app <span class="token operator">&lt;</span>project-name<span class="token operator">&gt;</span>
+<span class="token comment">## 进入工程目录</span>
+<span class="token builtin class-name">cd</span> <span class="token operator">&lt;</span>project-name<span class="token operator">&gt;</span>
+<span class="token comment">## 安装依赖</span>
+<span class="token function">npm</span> <span class="token function">install</span>
+<span class="token comment">## 运行</span>
+<span class="token function">npm</span> run dev
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/pages/system/vue3/01_认识Vue3.html" class="prev">
+          一、认识 Vue3
+        </a></span> <span class="next"><a href="/pages/system/vue3/03_常用CompositionAPI.html">
+          三、常用 Composition API
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.78c1d0ed.js" defer></script><script src="/assets/js/2.a6c8477a.js" defer></script><script src="/assets/js/18.1d7b46ae.js" defer></script>
+  </body>
+</html>
